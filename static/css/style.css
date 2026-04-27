@@ -202,15 +202,25 @@ img:hover {
   transform: translateY(-50%);
 }
 
-/* Coordenadas para la imagen licencia_h.png */
-#txt-yo { top: 18.5%; left: 54%; text-transform: uppercase; letter-spacing: 1px; }
-#txt-pareja { top: 30.5%; left: 54%; text-transform: uppercase; }
+/* Coordenadas ajustadas para la imagen de la Loba */
+#txt-yo { 
+    top: 36%; /* Bajó del 18% al 36% */
+    left: 45%; 
+    text-transform: uppercase; 
+}
+
+#txt-pareja { 
+    top: 73%; /* Bajó del 30% al 73% */
+    left: 55%; 
+    text-transform: uppercase; 
+}
+
 #txt-firma { 
-    top: 37.5%; 
+    top: 90%; /* Bajó del 37% al 90% */
     left: 64%; 
     font-family: 'Dancing Script', cursive; 
     font-size: clamp(1rem, 4vw, 1.6rem);
-    color: #000000; /* Firma también en negro */
+    color: #e91e63; /* Color rosa para que resalte la firma */
     transform: translateY(-50%) rotate(-2deg);
 }
 
@@ -237,4 +247,13 @@ footer {
   bottom: 0;
   left: 0;
   pointer-events: none;
+}
+
+/* Estilo especial para la imagen del Cap V */
+.contenedor-licencia-final img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #fff; /* Borde blanco para que parezca una foto real */
+    box-shadow: 0 10px 30px rgba(255, 7, 201, 0.4);
+    margin-top: 10px;
 }
