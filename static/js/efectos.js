@@ -83,4 +83,4 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => corazon.remove(), duracion * 1000);
   }
   setInterval(crearCorazon, 700); // Un poco más frecuentes para llenar la pantalla
-});
+});s
