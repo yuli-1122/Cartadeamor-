@@ -204,13 +204,13 @@ img:hover {
 
 /* Coordenadas ajustadas para la imagen de la Loba */
 #txt-yo { 
-    top: 41%; 
-    left: 50%; 
+    top: 40%; 
+    left: 60%; 
     text-transform: uppercase; 
 }
 
 #txt-pareja { 
-    top: 50%;
+    top: 80%;
     left: 55%; 
     text-transform: uppercase; 
 }
