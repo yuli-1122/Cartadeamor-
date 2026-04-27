@@ -204,19 +204,19 @@ img:hover {
 
 /* Coordenadas ajustadas para la imagen de la Loba */
 #txt-yo { 
-    top: 30%; 
-    left: 40%; 
+    top: 33%; 
+    left: 46%; 
     text-transform: uppercase; 
 }
 
 #txt-pareja { 
-    top: 87%;
+    top: 84%;
     left: 55%; 
     text-transform: uppercase; 
 }
 
 #txt-firma { 
-    top: 77%; /* Bajó del 37% al 90% */
+    top: 74%; /* Bajó del 37% al 90% */
     left: 64%; 
     font-family: 'Dancing Script', cursive; 
     font-size: clamp(1rem, 4vw, 1.6rem);
