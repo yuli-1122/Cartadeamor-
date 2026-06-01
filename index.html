@@ -5,57 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta de Amor</title>
 
-  <!-- ✨ Fuentes románticas desde Google Fonts -->
+  <!-- Fuentes románticas -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- 🎨 Estilos principales -->
+  <!-- Estilos principales -->
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
   <div id="contenedor-carta">
     
-    <!-- 💌 Encabezado principal -->
+    <!-- Encabezado -->
     <header>Para el amor de mi vida 🌸</header>
 
-    <!-- 📖 Menú de capítulos -->
+    <!-- Menú de capítulos -->
     <div id="menu-capitulos">
       <p>Nuestra historia en fragmentos...</p>
       <div class="grid-botones">
-        <!-- Cada botón abre un capítulo -->
-        <button class="btn-capitulo" data-target="cap2">Capítulo I</button>
-        <button class="btn-capitulo" data-target="cap3">Capítulo II</button>
-        <button class="btn-capitulo" data-target="cap4">Capítulo III</button>
-        <button class="btn-capitulo" data-target="cap5">Capítulo IV</button>
-        <button class="btn-capitulo" data-target="capExtra" style="background-color: #ff4081;">Capítulo V 💖</button>
+        <button class="btn-capitulo" data-target="cap1">Capítulo I</button>
+        <button class="btn-capitulo" data-target="cap2">Capítulo II</button>
+        <button class="btn-capitulo" data-target="cap3">Capítulo III</button>
+        <button class="btn-capitulo" data-target="cap4">Capítulo IV</button>
+        <button class="btn-capitulo" data-target="cap5">Capítulo V 💖</button>
       </div>
     </div>
 
-    <!-- 🌹 Capítulo II -->
-    <section id="cap2" class="capitulo-seccion">
+    <!-- Capítulo I -->
+    <section id="cap1" class="capitulo-seccion">
       <h2>Lo que siento 🌹</h2>
-      <p>Eres mi inspiración, mi alegría y el lugar donde mi corazón encuentra paz. Tu voz y tu sonrisa son mi refugio,
-        capaces de atravesar la distancia y envolverme en la certeza de que contigo todo es posible.</p>
-      <img src="static/img/2.png" alt="Elias">
+      <p>Eres mi inspiración, mi alegría y el lugar donde mi corazón encuentra paz...</p>
+      <img src="static/img/1.png" alt="Elias">
       <button class="btn-volver">Regresar</button>
     </section>
 
-    <!-- ♾️ Capítulo III -->
-    <section id="cap3" class="capitulo-seccion">
+    <!-- Capítulo II -->
+    <section id="cap2" class="capitulo-seccion">
       <h2>Mi Promesa ♾️</h2>
-      <p>Prometo estar contigo en cada instante, incluso en la distancia, porque mi amor no conoce fronteras.</p>
+      <p>Prometo estar contigo en cada instante, incluso en la distancia...</p>
       <button class="btn-volver">Regresar</button>
     </section>
 
-    <!-- 📜 Capítulo IV -->
-    <section id="cap4" class="capitulo-seccion">
+    <!-- Capítulo III -->
+    <section id="cap3" class="capitulo-seccion">
       <h2>Tu Licencia 📜</h2>
-      <!-- Formulario para personalizar la licencia -->
       <div class="formulario-licencia">
         <input type="text" id="input-yo" placeholder="Yo...">
         <input type="text" id="input-pareja" placeholder="Mi pareja...">
         <input type="text" id="input-firma" placeholder="Firma...">
       </div>
-      <!-- Imagen de la licencia con texto superpuesto -->
       <div class="licencia-visual">
         <img src="static/img/Licencia_h.png" class="img-licencia">
         <div class="capas-texto">
@@ -67,8 +63,8 @@
       <button class="btn-volver">Regresar</button>
     </section>
 
-    <!-- ✨ Capítulo V -->
-    <section id="cap5" class="capitulo-seccion">
+    <!-- Capítulo IV -->
+    <section id="cap4" class="capitulo-seccion">
       <h2>Mi Sorpresa ✨</h2>
       <p>"Yo también soy tuya..."</p>
       <div class="contenedor-licencia-final">
@@ -77,27 +73,23 @@
       <button class="btn-volver">Regresar</button>
     </section>
 
-    <!-- 🖤 Capítulo VI (Extra) -->
-    <section id="capExtra" class="capitulo-seccion">
-      <h2>Agujero Negro del Amor 🖤</h2>
-      <p>Un espacio donde la pasión y la oscuridad se encuentran, recordándonos que incluso en el vacío, el amor brilla.</p>
-      <div class="contenedor-extra">
-        <img src="static/img/blackhole_love.png" alt="Agujero Negro del Amor">
-        <p>“En tu gravedad me pierdo, y en tu luz me encuentro.”</p>
-      </div>
+    <!-- Capítulo V -->
+    <section id="cap5" class="capitulo-seccion">
+      <h2>Siempre juntos 💖</h2>
+      <p>En cada latido, en cada suspiro, estás conmigo.</p>
       <button class="btn-volver">Regresar</button>
     </section>
 
-    <!-- 💖 Footer -->
+    <!-- Footer -->
     <footer>Te amo siempre</footer>
 
-    <!-- 🎶 Contenedor de música -->
+    <!-- 🎶 Música oculta (solo se activa en JS) -->
     <div id="contenedor-musica">
       <iframe id="musica-fondo" src="" frameborder="0" allow="autoplay"></iframe>
     </div>
   </div>
 
-  <!-- ⚡ Script de efectos -->
+  <!-- Script de efectos -->
   <script src="static/js/efectos.js"></script>
 </body>
 </html>
