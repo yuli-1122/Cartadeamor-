@@ -1,3 +1,21 @@
+/* --- SECCIÓN EXTRA --- */
+.contenedor-extra {
+  background: rgba(255, 7, 201, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid var(--rosa-primario);
+  box-shadow: var(--sombra);
+}
+
+.contenedor-extra img {
+  max-width: 100%;
+  border: 4px solid var(--rosa-primario);
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+
+
 /* --- VARIABLES GLOBALES --- */
 :root {
   --rosa-primario: #ff07c9;
