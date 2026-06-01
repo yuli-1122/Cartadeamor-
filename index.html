@@ -4,57 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta de Amor</title>
+
+  <!-- ✨ Fuentes románticas desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- 🎨 Estilos principales -->
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
   <div id="contenedor-carta">
+    
+    <!-- 💌 Encabezado principal -->
     <header>Para el amor de mi vida 🌸</header>
 
-    <!-- AQUÍ SOLO LOS BOTONES, NADA MÁS -->
+    <!-- 📖 Menú de capítulos -->
     <div id="menu-capitulos">
       <p>Nuestra historia en fragmentos...</p>
       <div class="grid-botones">
-        <button class="btn-capitulo" data-target="cap1">Capítulo I</button>
-        <button class="btn-capitulo" data-target="cap2">Capítulo II</button>
-        <button class="btn-capitulo" data-target="cap3">Capítulo III</button>
-        <button class="btn-capitulo" data-target="cap4">Capítulo IV</button>
-        <button class="btn-capitulo" data-target="cap5" style="background-color: #ff4081;">Capítulo V 💖</button>
-        
-        <!-- CAPITULO 6 CON EL LINK QUE ME DISTE -->
-        <button class="btn-capitulo" onclick="window.location.href='https://codeninja5.com/api/view-proxy?url=https%3A%2F%2Fxyiktoclcllrnpjerqzu.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ftemplates%2F9e854917-33e5-485b-b809-ba7159f31418.html'">Capítulo VI 🖤</button>
+        <!-- Cada botón abre un capítulo -->
+        <button class="btn-capitulo" data-target="cap2">Capítulo I</button>
+        <button class="btn-capitulo" data-target="cap3">Capítulo II</button>
+        <button class="btn-capitulo" data-target="cap4">Capítulo III</button>
+        <button class="btn-capitulo" data-target="cap5">Capítulo IV</button>
+        <button class="btn-capitulo" data-target="capExtra" style="background-color: #ff4081;">Capítulo V 💖</button>
       </div>
     </div>
 
-    <footer>Te amo siempre</footer>
-  </div>
-
-  <script src="static/js/efectos.js"></script>
-</body>
-</html>
-
+    <!-- 🌹 Capítulo II -->
     <section id="cap2" class="capitulo-seccion">
       <h2>Lo que siento 🌹</h2>
-      <p>Eres mi inspiración, mi alegría y el lugar donde mi corazón encuentra paz. Tu voz y tu sonrisa son mi refugio, 
+      <p>Eres mi inspiración, mi alegría y el lugar donde mi corazón encuentra paz. Tu voz y tu sonrisa son mi refugio,
         capaces de atravesar la distancia y envolverme en la certeza de que contigo todo es posible.</p>
       <img src="static/img/2.png" alt="Elias">
       <button class="btn-volver">Regresar</button>
     </section>
 
+    <!-- ♾️ Capítulo III -->
     <section id="cap3" class="capitulo-seccion">
       <h2>Mi Promesa ♾️</h2>
-      <p>Eres mi inspiración, mi alegría y el lugar donde mi corazón encuentra paz. Tu voz y tu sonrisa son mi refugio, 
-        capaces de atravesar la distancia y envolverme en la certeza de que contigo todo es posible.</p>
+      <p>Prometo estar contigo en cada instante, incluso en la distancia, porque mi amor no conoce fronteras.</p>
       <button class="btn-volver">Regresar</button>
     </section>
 
+    <!-- 📜 Capítulo IV -->
     <section id="cap4" class="capitulo-seccion">
       <h2>Tu Licencia 📜</h2>
+      <!-- Formulario para personalizar la licencia -->
       <div class="formulario-licencia">
         <input type="text" id="input-yo" placeholder="Yo...">
         <input type="text" id="input-pareja" placeholder="Mi pareja...">
         <input type="text" id="input-firma" placeholder="Firma...">
       </div>
+      <!-- Imagen de la licencia con texto superpuesto -->
       <div class="licencia-visual">
         <img src="static/img/Licencia_h.png" class="img-licencia">
         <div class="capas-texto">
@@ -66,6 +67,7 @@
       <button class="btn-volver">Regresar</button>
     </section>
 
+    <!-- ✨ Capítulo V -->
     <section id="cap5" class="capitulo-seccion">
       <h2>Mi Sorpresa ✨</h2>
       <p>"Yo también soy tuya..."</p>
@@ -74,168 +76,28 @@
       </div>
       <button class="btn-volver">Regresar</button>
     </section>
-    
+
+    <!-- 🖤 Capítulo VI (Extra) -->
     <section id="capExtra" class="capitulo-seccion">
       <h2>Agujero Negro del Amor 🖤</h2>
       <p>Un espacio donde la pasión y la oscuridad se encuentran, recordándonos que incluso en el vacío, el amor brilla.</p>
-      
       <div class="contenedor-extra">
         <img src="static/img/blackhole_love.png" alt="Agujero Negro del Amor">
         <p>“En tu gravedad me pierdo, y en tu luz me encuentro.”</p>
       </div>
-
       <button class="btn-volver">Regresar</button>
     </section>
 
+    <!-- 💖 Footer -->
     <footer>Te amo siempre</footer>
+
+    <!-- 🎶 Contenedor de música -->
     <div id="contenedor-musica">
       <iframe id="musica-fondo" src="" frameborder="0" allow="autoplay"></iframe>
     </div>
   </div>
-  <script src="static/js/efectos.js"></script>
-</body>
-</html>
-      <p>Eres mi inspiración, mi alegría y el lugar donde mi corazón encuentra paz. Tu voz y tu sonrisa son mi refugio, 
-        capaces de atravesar la distancia y envolverme en la certeza de que contigo todo es posible.</p>
-      <img src="static/img/2.png" alt="Elias">
-      <button class="btn-volver">Regresar</button>
-    </section>
 
-    <section id="cap3" class="capitulo-seccion">
-      <h2>Mi Promesa ♾️</h2>
-      <p>Eres mi inspiración, mi alegría y el lugar donde mi corazón encuentra paz. Tu voz y tu sonrisa son mi refugio, 
-        capaces de atravesar la distancia y envolverme en la certeza de que contigo todo es posible.</p>
-      <button class="btn-volver">Regresar</button>
-    </section>
-
-    <section id="cap4" class="capitulo-seccion">
-      <h2>Tu Licencia 📜</h2>
-      <div class="formulario-licencia">
-        <input type="text" id="input-yo" placeholder="Yo...">
-        <input type="text" id="input-pareja" placeholder="Mi pareja...">
-        <input type="text" id="input-firma" placeholder="Firma...">
-      </div>
-      <div class="licencia-visual">
-        <img src="static/img/Licencia_h.png" class="img-licencia">
-        <div class="capas-texto">
-          <span id="txt-yo" class="overlay-text"></span>
-          <span id="txt-pareja" class="overlay-text"></span>
-          <span id="txt-firma" class="overlay-text"></span>
-        </div>
-      </div>
-      <button class="btn-volver">Regresar</button>
-    </section>
-
-    <section id="cap5" class="capitulo-seccion">
-      <h2>Mi Sorpresa ✨</h2>
-      <p>"Yo también soy tuya..."</p>
-      <div class="contenedor-licencia-final">
-        <img src="static/img/Licencia_m.png" alt="Sorpresa">
-      </div>
-      <button class="btn-volver">Regresar</button>
-    </section>
-    
-    <section id="capExtra" class="capitulo-seccion">
-      <h2>Agujero Negro del Amor 🖤</h2>
-      <p>Un espacio donde la pasión y la oscuridad se encuentran, recordándonos que incluso en el vacío, el amor brilla.</p>
-      
-      <div class="contenedor-extra">
-        <img src="static/img/blackhole_love.png" alt="Agujero Negro del Amor">
-        <p>“En tu gravedad me pierdo, y en tu luz me encuentro.”</p>
-      </div>
-
-      <button class="btn-volver">Regresar</button>
-    </section>
-
-    <footer>Te amo siempre</footer>
-    <div id="contenedor-musica">
-      <iframe id="musica-fondo" src="" frameborder="0" allow="autoplay"></iframe>
-    </div>
-  </div>
-  <script src="static/js/efectos.js"></script>
-</body>
-</html>
-    <section id="capExtra" class="capitulo-seccion">
-      <h2>Agujero Negro del Amor 🖤</h2>
-      <p>Un espacio donde la pasión y la oscuridad se encuentran, recordándonos que incluso en el vacío, el amor brilla.</p>
-      
-      <div class="contenedor-extra">
-        <img src="static/img/blackhole_love.png" alt="Agujero Negro del Amor">
-        <p>“En tu gravedad me pierdo, y en tu luz me encuentro.”</p>
-      </div>
-
-      <button class="btn-volver">Regresar</button>
-    </section>
-
-    <footer>Te amo siempre</footer>
-    
-    <div id="contenedor-musica">
-      <iframe id="musica-fondo" src="" frameborder="0" allow="autoplay"></iframe>
-    </div>
-  </div>
-  
-  <script src="static/js/efectos.js"></script>
-</body>
-</html>
-        capaces de atravesar la distancia y envolverme en la certeza de que contigo todo es posible.</p>
-      <img src="static/img/2.png" alt="Elias">
-      <button class="btn-volver">Regresar</button>
-    </section>
-
-    <section id="cap3" class="capitulo-seccion">
-      <h2>Mi Promesa ♾️</h2>
-      <p>Eres mi inspiración, mi alegría y el lugar donde mi corazón encuentra paz. Tu voz y tu sonrisa son mi refugio, 
-        capaces de atravesar la distancia y envolverme en la certeza de que contigo todo es posible.</p>
-      <button class="btn-volver">Regresar</button>
-    </section>
-
-    <section id="cap4" class="capitulo-seccion">
-      <h2>Tu Licencia 📜</h2>
-      <div class="formulario-licencia">
-        <input type="text" id="input-yo" placeholder="Yo...">
-        <input type="text" id="input-pareja" placeholder="Mi pareja...">
-        <input type="text" id="input-firma" placeholder="Firma...">
-      </div>
-      <div class="licencia-visual">
-        <img src="static/img/Licencia_h.png" class="img-licencia">
-        <div class="capas-texto">
-          <span id="txt-yo" class="overlay-text"></span>
-          <span id="txt-pareja" class="overlay-text"></span>
-          <span id="txt-firma" class="overlay-text"></span>
-        </div>
-      </div>
-      <button class="btn-volver">Regresar</button>
-    </section>
-
-    <section id="cap5" class="capitulo-seccion">
-      <h2>Mi Sorpresa ✨</h2>
-      <p>"Yo también soy tuya..."</p>
-      <div class="contenedor-licencia-final">
-        <img src="static/img/Licencia_m.png" alt="Sorpresa">
-      </div>
-      <button class="btn-volver">Regresar</button>
-    </section>
-    
-   <button class="btn-capitulo" data-target="capExtra">Capítulo VI 🖤</button>
-<section id="capExtra" class="capitulo-seccion">
-  <h2>Agujero Negro del Amor 🖤</h2>
-  <p>Un espacio donde la pasión y la oscuridad se encuentran, recordándonos que incluso en el vacío, el amor brilla.</p>
-  
-  <div class="contenedor-extra">
-    <img src="static/img/blackhole_love.png" alt="Agujero Negro del Amor">
-    <p>“En tu gravedad me pierdo, y en tu luz me encuentro.”</p>
-  </div>
-
-  <button class="btn-volver">Regresar</button>
-</section>
-
-
-
-    <footer>Te amo siempre</footer>
-    <div id="contenedor-musica">
-      <iframe id="musica-fondo" src="" frameborder="0" allow="autoplay"></iframe>
-    </div>
-  </div>
+  <!-- ⚡ Script de efectos -->
   <script src="static/js/efectos.js"></script>
 </body>
 </html>
