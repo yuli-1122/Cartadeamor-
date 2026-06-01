@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carta de Amor</title>
-  <!-- Corregido: Añadido Poppins que es el que realmente carga -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
@@ -20,7 +19,6 @@
         <button class="btn-capitulo" data-target="cap3">Capítulo III</button>
         <button class="btn-capitulo" data-target="cap4">Capítulo IV</button>
         <button class="btn-capitulo" data-target="cap5" style="background-color: #ff4081;">Capítulo V 💖</button>
-        <!-- Movido aquí: Ahora sí aparece en el menú -->
         <button class="btn-capitulo" data-target="capExtra">Capítulo VI 🖤</button>
       </div>
     </div>
@@ -76,7 +74,26 @@
       <button class="btn-volver">Regresar</button>
     </section>
     
-    <!-- La sección se mantiene, pero el botón ya está arriba en el menú -->
+    <section id="capExtra" class="capitulo-seccion">
+      <h2>Agujero Negro del Amor 🖤</h2>
+      <p>Un espacio donde la pasión y la oscuridad se encuentran, recordándonos que incluso en el vacío, el amor brilla.</p>
+      
+      <div class="contenedor-extra">
+        <img src="static/img/blackhole_love.png" alt="Agujero Negro del Amor">
+        <p>“En tu gravedad me pierdo, y en tu luz me encuentro.”</p>
+      </div>
+
+      <button class="btn-volver">Regresar</button>
+    </section>
+
+    <footer>Te amo siempre</footer>
+    <div id="contenedor-musica">
+      <iframe id="musica-fondo" src="" frameborder="0" allow="autoplay"></iframe>
+    </div>
+  </div>
+  <script src="static/js/efectos.js"></script>
+</body>
+</html>
     <section id="capExtra" class="capitulo-seccion">
       <h2>Agujero Negro del Amor 🖤</h2>
       <p>Un espacio donde la pasión y la oscuridad se encuentran, recordándonos que incluso en el vacío, el amor brilla.</p>
