@@ -1,49 +1,37 @@
-/* --- 🎨 SECCIÓN EXTRA (Capítulo VI) --- */
-.contenedor-extra {
-  background: rgba(255, 7, 201, 0.05); /* Fondo translúcido rosa */
-  padding: 20px;
-  border-radius: 15px;
-  border: 1px solid var(--rosa-primario); /* Borde rosa principal */
-  box-shadow: var(--sombra); /* Sombra definida en variables */
-}
-
-.contenedor-extra img {
-  max-width: 100%; /* Imagen responsiva */
-  border: 4px solid var(--rosa-primario); /* Borde rosa */
-  border-radius: 12px;
-  margin: 20px 0;
-}
-
 /* --- 🌈 VARIABLES GLOBALES --- */
 :root {
-  --rosa-primario: #ff07c9; /* Color rosa principal */
-  --rosa-oscuro: #d81b60;   /* Rosa más oscuro para hover */
-  --rosa-claro: #fce4ec;    /* Rosa claro para fondos */
-  --morado-texto: #fce4ec;  /* Texto claro sobre fondo oscuro */
-  --negro-elegante: #000000; /* Negro puro para contraste */
+  --rosa-primario: #ff07c9;
+  --rosa-oscuro: #d81b60;
+  --rosa-claro: #fce4ec;
+  --texto-claro: #fce4ec;
+  --negro-elegante: #000000;
   --fondo-gradiente: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-  --sombra: 0 10px 30px rgba(255, 7, 201, 0.2); /* Sombra rosa */
+  --sombra: 0 10px 30px rgba(255, 7, 201, 0.2);
 }
 
 /* --- 🖋️ ESTILOS BASE --- */
-body {
-  background: var(--fondo-gradiente); /* Fondo degradado negro */
-  color: var(--morado-texto); /* Texto claro */
-  font-family: 'Quicksand', sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fondo-gradiente);
+  color: var(--texto-claro);
+  font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   overflow-x: hidden;
+  padding: 20px 0;
 }
 
 #contenedor-carta {
   width: 90%;
   max-width: 800px;
   text-align: center;
-  padding: 20px;
 }
 
 /* --- ✨ HEADER --- */
@@ -53,7 +41,7 @@ header {
   color: var(--rosa-primario);
   margin: 40px 0;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-  animation: float 3s ease-in-out infinite; /* Animación flotante */
+  animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -61,7 +49,7 @@ header {
   50% { transform: translateY(-10px); }
 }
 
-/* --- 📖 MENÚ Y BOTONES DE CAPÍTULOS --- */
+/* --- 📖 MENÚ Y BOTONES --- */
 #menu-capitulos {
   background: rgba(20, 20, 20, 0.8);
   padding: 30px;
@@ -71,11 +59,16 @@ header {
   border: 1px solid var(--rosa-primario);
 }
 
+#menu-capitulos p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #f8bbd0;
+}
+
 .grid-botones {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
-  margin-top: 20px;
 }
 
 .btn-capitulo {
@@ -89,14 +82,14 @@ header {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(255, 7, 201, 0.2);
-  animation: pulse-pink 2s infinite; /* Animación de pulso */
+  animation: pulse-pink 2s infinite;
 }
 
 .btn-capitulo:hover {
   background-color: var(--rosa-oscuro);
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-  animation: none; /* Detiene el pulso al hover */
+  animation: none;
 }
 
 @keyframes pulse-pink {
@@ -105,9 +98,9 @@ header {
   100% { box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
 }
 
-/* --- 📚 SECCIONES DE CAPÍTULOS --- */
+/* --- 📚 SECCIONES --- */
 .capitulo-seccion {
-  display: none; /* Ocultas por defecto */
+  display: none;
   background: #111111;
   padding: 40px 20px;
   border-radius: 20px;
@@ -121,20 +114,21 @@ header {
 .capitulo-seccion.visible {
   opacity: 1;
   transform: translateY(0);
-  transition: all 0.6s ease-out; /* Transición suave */
+  transition: all 0.6s ease-out;
 }
 
 h2 {
   font-family: 'Dancing Script', cursive;
   font-size: 2.5rem;
   color: var(--rosa-primario);
+  margin-bottom: 20px;
 }
 
 p {
   line-height: 1.6;
   font-size: 1.1rem;
   margin: 20px 0;
-  color: #ddd; /* Texto más legible */
+  color: #ddd;
 }
 
 img {
@@ -148,8 +142,8 @@ img {
 }
 
 img:hover {
-  transform: scale(1.05); /* Zoom suave */
-  filter: brightness(1.1); /* Foto iluminada */
+  transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 /* --- 🔙 BOTÓN VOLVER --- */
@@ -168,10 +162,10 @@ img:hover {
 .btn-volver:hover {
   background: var(--rosa-primario);
   color: white;
-  box-shadow: 0 0 15px var(--rosa-primario); /* Brillo */
+  box-shadow: 0 0 15px var(--rosa-primario);
 }
 
-/* --- 📜 FORMULARIO Y LICENCIA --- */
+/* --- 📜 LICENCIA --- */
 .formulario-licencia {
   display: flex;
   flex-direction: column;
@@ -193,7 +187,7 @@ img:hover {
 }
 
 .formulario-licencia input:focus {
-  border-color: var(--rosa-primario);
+  border-color: #e91e63;
 }
 
 .licencia-visual {
@@ -212,28 +206,44 @@ img:hover {
 
 .overlay-text {
   position: absolute;
-  color: #000000; /* Texto negro sobre la licencia */
+  color: #000000;
   font-weight: bold;
   font-size: clamp(0.7rem, 2.8vw, 1.3rem);
   white-space: nowrap;
   pointer-events: none;
   font-family: 'Quicksand', sans-serif;
-  transform: translateY(-50%);
 }
 
-/* Coordenadas ajustadas para la imagen de la licencia */
-#txt-yo { top: 38%; left: 57%; text-transform: uppercase; }
-#txt-pareja { top: 78%; left: 55%; text-transform: uppercase; }
+#txt-yo { top: 38%; left: 57%; }
+#txt-pareja { top: 62%; left: 55%; }
 #txt-firma { 
-  top: 72%; 
+  top: 78%; 
   left: 64%; 
   font-family: 'Dancing Script', cursive; 
   font-size: clamp(1rem, 4vw, 1.6rem);
-  color: #e91e63; /* Rosa fuerte para firma */
-  transform: translateY(-50%) rotate(-2deg);
+  color: #e91e63;
 }
 
-/* --- 💖 ANIMACIÓN DE CORAZONES --- */
+/* --- 💖 CORAZONES FLOTANDO --- */
+.corazon {
+  position: fixed;
+  color: #ff4081;
+  font-size: 24px;
+  animation: caer 4s linear infinite;
+  z-index: 100;
+  pointer-events: none;
+}
+
 @keyframes caer {
-  0% { transform: translateY(-50px) rotate(0deg) translateX(0); }
-  25% { transform: translate  q
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+/* --- FOOTER --- */
+footer {
+  margin-top: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: var(--rosa-primario);
+  opacity: 0.8;
+}
